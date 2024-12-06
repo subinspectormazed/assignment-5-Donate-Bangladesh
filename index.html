@@ -60,7 +60,7 @@
             src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
             alt=""
           />
-          <p class="font-medium text-xl"><span class="p-2">5500</span>BDT</p>
+          <p class="font-medium text-xl"><span id="dashboard-amount" class="p-2">5500</span>BDT</p>
         </div>
       </div>
     </nav>
@@ -99,7 +99,7 @@
             src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
             alt=""
           />
-          <p class="text-[#111111B3]"><span class="pr-2">5000</span>BDT</p>
+          <p class="text-[#111111B3]"><span id="noakhali-amount" class="pr-2">5000</span>BDT</p>
         </button>
         <h2 class="card-title font-bold text-xl">
           Donate for Flood at Noakhali, Bangladesh
@@ -112,13 +112,13 @@
           making a positive impact on the lives of those in need.
         </p>
 
-        <input
+        <input id="amount1"
           type="number"
           placeholder="Write Donation Amount"
           class="input input-bordered w-full text-[#11111166] font-light"
         />
         <div class="card-actions justify-end mt-2">
-          <button class="btn w-full bg-[#B4F461] border-none text-black">
+          <button id="noakhali-donate-btn" class="btn w-full bg-[#B4F461] border-none text-black">
             Donate Now
           </button>
         </div>
@@ -142,7 +142,7 @@
             src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
             alt=""
           />
-          <p class="text-[#111111B3]"><span class="pr-2">600</span>BDT</p>
+          <p class="text-[#111111B3]"><span id="feni-amount" class="pr-2">600</span>BDT</p>
         </button>
         <h2 class="card-title font-bold text-xl">
           Donate for Flood Relief in Feni,Bangladesh
@@ -157,13 +157,13 @@
           Please consider donating today to assist those in urgent need.
         </p>
 
-        <input
+        <input id="amount2"
           type="number"
           placeholder="Write Donation Amount"
           class="input input-bordered w-full text-[#11111166] font-light"
         />
         <div class="card-actions justify-end mt-2">
-          <button class="btn w-full bg-[#B4F461] border-none text-black">
+          <button id="feni-donate-btn" class="btn w-full bg-[#B4F461] border-none text-black">
             Donate Now
           </button>
         </div>
@@ -187,7 +187,7 @@
             src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
             alt=""
           />
-          <p class="text-[#111111B3]"><span class="pr-2">2400</span>BDT</p>
+          <p class="text-[#111111B3]"><span id="quota-amount" class="pr-2">2400</span>BDT</p>
         </button>
         <h2 class="card-title font-bold text-xl">
           Aid for Injured in the Quota Movement
@@ -203,18 +203,20 @@
           donation to support these brave individuals in their time of need.
         </p>
 
-        <input
+        <input id="amount3"
           type="number"
           placeholder="Write Donation Amount"
           class="input input-bordered w-full text-[#11111166] font-light"
         />
         <div class="card-actions justify-end mt-2">
-          <button class="btn w-full bg-[#B4F461] border-none text-black">
+          <button id="quota-donate-btn" class="btn w-full bg-[#B4F461] border-none text-black">
             Donate Now
           </button>
         </div>
       </div>
     </div>
     <!-- cards section ends here -->
+     <script src="./js/index.js"></script>
+     <script src="./js/utilities.js"></script>
   </body>
 </html>
