@@ -73,3 +73,34 @@ document
 
     document.getElementById("amount3").value = "";
   });
+
+document.getElementById("history-btn").addEventListener("click", function () {
+  document.getElementById("donation-page").classList.add("hidden");
+  document
+    .getElementById("history-btn")
+    .classList.add("font-semibold", "bg-[#B4F461]", "lg:text-lg", "text-black");
+  document
+    .getElementById("donation-btn")
+    .classList.remove(
+      "font-semibold",
+      "bg-[#B4F461]",
+      "lg:text-lg",
+      "text-black"
+    );
+});
+
+document.getElementById("donation-btn").addEventListener("click", function () {
+  document.getElementById("donation-page").classList.remove("hidden");
+
+  document
+    .getElementById("history-btn")
+    .classList.remove(
+      "font-semibold",
+      "bg-[#B4F461]",
+      "lg:text-lg",
+      "text-black"
+    );
+  document
+    .getElementById("donation-btn")
+    .classList.add("font-semibold", "bg-[#B4F461]", "lg:text-lg", "text-black");
+});
