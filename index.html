@@ -33,7 +33,7 @@
     <title>Donate Bangladesh</title>
   </head>
 
-  <body class="font-lexend">
+  <body id="full-page" class="font-lexend">
     <!-- navbar section starts here -->
     <nav class="bg-[#F9F7F3]/80 pb-6 w-full sticky top-0 z-50 backdrop-blur-md">
       <div class="navbar lg:w-10/12 flex mx-auto">
@@ -60,7 +60,9 @@
             src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
             alt=""
           />
-          <p class="font-medium text-xl"><span id="dashboard-amount" class="p-2">5500</span>BDT</p>
+          <p class="font-medium text-xl">
+            <span id="dashboard-amount" class="p-2">5500</span>BDT
+          </p>
         </div>
       </div>
     </nav>
@@ -68,12 +70,16 @@
     <!-- button switch section starts here -->
     <div class="lg:mb-20 mt-8 flex justify-center">
       <div class="fixed z-50">
-        <button id="donation-btn"
-          class="border-none font-semibold btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] lg:text-lg text-black lg:px-8"
+        <button
+          id="donation-btn"
+          class="border-none border-gray-500 font-semibold btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] lg:text-lg text-black lg:px-8"
         >
           Donation
         </button>
-        <button id="history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:px-8 ml-4 border-none">
+        <button
+          id="history-btn"
+          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:px-8 ml-4 border-gray-500"
+        >
           History
         </button>
       </div>
@@ -81,7 +87,8 @@
     <!-- button switch section ends here -->
 
     <!-- cards section starts here -->
-     <section id="donation-page">    <!-- card-01 -->
+    <section id="donation-page">
+      <!-- card-01 -->
       <div
         class="card lg:card-side bg-base-100 shadow-xl mt-10 w-10/12 flex mx-auto"
       >
@@ -99,26 +106,33 @@
               src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
               alt=""
             />
-            <p class="text-[#111111B3]"><span id="noakhali-amount" class="pr-2">5000</span>BDT</p>
+            <p class="text-[#111111B3]">
+              <span id="noakhali-amount" class="pr-2">5000</span>BDT
+            </p>
           </button>
           <h2 class="card-title font-bold text-xl">
             Donate for Flood at Noakhali, Bangladesh
           </h2>
           <p class="text-[#111111B3]">
-            The recent floods in Noakhali have caused significant damage to homes
-            infrastructure. Your donation will help provide essential supplies and
-            to those affected by this disaster. Every contribution, big or small,
-            makes difference. Please join us in supporting the relief efforts and
-            making a positive impact on the lives of those in need.
+            The recent floods in Noakhali have caused significant damage to
+            homes infrastructure. Your donation will help provide essential
+            supplies and to those affected by this disaster. Every contribution,
+            big or small, makes difference. Please join us in supporting the
+            relief efforts and making a positive impact on the lives of those in
+            need.
           </p>
 
-          <input id="amount1"
+          <input
+            id="amount1"
             type="number"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full text-[#11111166] font-light"
           />
           <div class="card-actions justify-end mt-2">
-            <button id="noakhali-donate-btn" class="btn w-full bg-[#B4F461] border-none text-black">
+            <button
+              id="noakhali-donate-btn"
+              class="btn w-full bg-[#B4F461] border-none text-black"
+            >
               Donate Now
             </button>
           </div>
@@ -142,7 +156,9 @@
               src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
               alt=""
             />
-            <p class="text-[#111111B3]"><span id="feni-amount" class="pr-2">600</span>BDT</p>
+            <p class="text-[#111111B3]">
+              <span id="feni-amount" class="pr-2">600</span>BDT
+            </p>
           </button>
           <h2 class="card-title font-bold text-xl">
             Donate for Flood Relief in Feni,Bangladesh
@@ -153,17 +169,22 @@
             provide immediate aid, including food, clean water, and medical
             supplies, to those affected by this calamity. Together, we can offer
             crucial support and help rebuild lives in the aftermath of this
-            disaster. Every contribution counts towards making a real difference.
-            Please consider donating today to assist those in urgent need.
+            disaster. Every contribution counts towards making a real
+            difference. Please consider donating today to assist those in urgent
+            need.
           </p>
 
-          <input id="amount2"
+          <input
+            id="amount2"
             type="number"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full text-[#11111166] font-light"
           />
           <div class="card-actions justify-end mt-2">
-            <button id="feni-donate-btn" class="btn w-full bg-[#B4F461] border-none text-black">
+            <button
+              id="feni-donate-btn"
+              class="btn w-full bg-[#B4F461] border-none text-black"
+            >
               Donate Now
             </button>
           </div>
@@ -187,37 +208,65 @@
               src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
               alt=""
             />
-            <p class="text-[#111111B3]"><span id="quota-amount" class="pr-2">2400</span>BDT</p>
+            <p class="text-[#111111B3]">
+              <span id="quota-amount" class="pr-2">2400</span>BDT
+            </p>
           </button>
           <h2 class="card-title font-bold text-xl">
             Aid for Injured in the Quota Movement
           </h2>
           <p class="text-[#111111B3]">
             The recent Quota movement has resulted in numerous injuries and
-            significant hardship for many individuals. Your support is crucial in
-            providing medical assistance, rehabilitation, and necessary supplies
-            to those affected. By contributing, you help ensure that injured
-            individuals receive the care and support they need during this
-            challenging time. Every donation plays a vital role in alleviating
-            their suffering and aiding in their recovery. Please consider making a
-            donation to support these brave individuals in their time of need.
+            significant hardship for many individuals. Your support is crucial
+            in providing medical assistance, rehabilitation, and necessary
+            supplies to those affected. By contributing, you help ensure that
+            injured individuals receive the care and support they need during
+            this challenging time. Every donation plays a vital role in
+            alleviating their suffering and aiding in their recovery. Please
+            consider making a donation to support these brave individuals in
+            their time of need.
           </p>
 
-          <input id="amount3"
+          <input
+            id="amount3"
             type="number"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full text-[#11111166] font-light"
           />
           <div class="card-actions justify-end mt-2">
-            <button id="quota-donate-btn" class="btn w-full bg-[#B4F461] border-none text-black">
+            <button
+              id="quota-donate-btn"
+              class="btn w-full bg-[#B4F461] border-none text-black"
+            >
               Donate Now
             </button>
           </div>
         </div>
       </div>
-      <!-- cards section ends here --></section>
-
-     <script src="./js/index.js"></script>
-     <script src="./js/utilities.js"></script>
+      <!-- cards section ends here -->
+    </section>
+    <!-- History section -->
+    <div id="history-page" class="hidden"></div>
+    <!-- Popup for successful donation -->
+    <div id="popup" class="hidden items-center justify-center">
+      <div class="card bg-base-100 w-96 shadow-xl fixed top-24 z-50">
+        <div class="card-body mx-auto">
+          <h2 class="card-title mx-auto mb-4">Congrats!</h2>
+          <img
+            class="w-12 mx-auto mb-6"
+            src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+            alt=""
+          />
+          <p class="mx-auto text-slate-500">You Have Donated for Humankind</p>
+          <h2 class="card-title mx-auto">Successfully</h2>
+          <div class="card-actions justify-end mt-3">
+            <button id="close-popup" class="btn bg-slate-200 mx-auto">Close Confirmation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS linked -->
+    <script src="./js/index.js"></script>
+    <script src="./js/utilities.js"></script>
   </body>
 </html>

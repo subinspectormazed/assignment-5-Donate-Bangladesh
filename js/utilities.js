@@ -16,3 +16,14 @@ function dashboardMoney(id) {
 
   return deductMoney;
 }
+
+document.getElementById("close-popup").addEventListener("click", function(){
+document.getElementById("popup").classList.add("hidden");
+document.getElementById("full-page").classList.remove("overflow-hidden")
+})
+
+function popUp(){
+document.getElementById("popup").classList.remove("hidden");
+document.getElementById("full-page").classList.add("overflow-hidden");
+document.getElementById("popup").classList.add("flex");
+}
