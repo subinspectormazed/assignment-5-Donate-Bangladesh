@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- googe font link added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUI and tailwind css cdn link added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Donate Bangladesh</title>
+  </head>
+
+  <body class="font-lexend">
+    <!-- navbar section starts here -->
+    <nav class="bg-[#F9F7F3] pb-6 w-full">
+      <div class="navbar lg:w-10/12 flex mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost bg-[#B4F461]">
+              <h2 class="text-black font-semibold text-xl"><a href="./blog.html">Blog</a> </h2>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl text-black" href="./index.html"
+            ><img
+              class="w-10"
+              src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png"
+              alt=""
+            /><span class="hidden sm:block">Donate Bangladesh</span></a
+          >
+        </div>
+        <div class="navbar-end">
+          <img
+            src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+            alt=""
+          />
+          <p class="font-medium text-xl"><span class="p-2">5500</span>BDT</p>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section Ends here -->
+  </body>
+</html>
