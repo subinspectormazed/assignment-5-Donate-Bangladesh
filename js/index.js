@@ -27,8 +27,8 @@ document
     historyItem.className = "card bg-base-100 w-8/12 shadow-xl mx-auto mb-4";
 
     historyItem.innerHTML = `<div class="card-body">
-            <h2 class="card-title">${inputMoneyValue} Taka is Donated for Flood at Noakhali, Bangladesh</h2>
-            <p>Date: ${new Date().toLocaleString()}</p></div>`;
+            <h2 class="text-base font-bold">${inputMoneyValue} Taka is Donated for Flood at Noakhali, Bangladesh</h2>
+            <p class = "text-xs">Date: ${new Date().toLocaleString()}</p></div>`;
 
     const historyPage = document.getElementById("history-page");
 
@@ -68,8 +68,8 @@ document
     historyItem.className = "card bg-base-100 w-8/12 shadow-xl mx-auto mb-4";
 
     historyItem.innerHTML = `<div class="card-body">
-            <h2 class="card-title">${inputMoneyValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
-            <p>Date: ${new Date().toLocaleString()}</p></div>`;
+            <h2 class="text-base font-bold">${inputMoneyValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
+            <p class="text-xs">Date: ${new Date().toLocaleString()}</p></div>`;
 
     const historyPage = document.getElementById("history-page");
 
@@ -108,8 +108,8 @@ document
     historyItem.className = "card bg-base-100 w-8/12 shadow-xl mx-auto mb-4";
 
     historyItem.innerHTML = `<div class="card-body">
-            <h2 class="card-title">${inputMoneyValue} Taka is Donated for Aid for Injured in the Quota Movement</h2>
-            <p>Date: ${new Date().toLocaleString()}</p></div>`;
+            <h2 class="text-base font-bold">${inputMoneyValue} Taka is Donated for Aid for Injured in the Quota Movement</h2>
+            <p class = "text-xs">Date: ${new Date().toLocaleString()}</p></div>`;
 
     const historyPage = document.getElementById("history-page");
 

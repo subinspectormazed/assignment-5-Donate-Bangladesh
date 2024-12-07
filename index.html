@@ -38,13 +38,12 @@
     <nav class="bg-[#F9F7F3]/80 pb-6 w-full sticky top-0 z-50 backdrop-blur-md">
       <div class="navbar lg:w-10/12 flex mx-auto">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost bg-[#B4F461]">
-              <h2 class="text-black font-semibold text-xl px-3">
-                <a href="./blog.html">Blog</a>
-              </h2>
-            </div>
-          </div>
+          <button
+          id="blog-btn"
+          class="border-none font-semibold btn btn-ghost bg-[#B4F461] lg:text-lg text-black px-6"
+        >
+          Blog
+        </button>
         </div>
         <div class="navbar-center">
           <a class="btn btn-ghost text-xl text-black" href="./index.html"
@@ -68,9 +67,10 @@
     </nav>
     <!-- navbar section Ends here -->
     <!-- button switch section starts here -->
-    <div class="lg:mb-20 mt-8 flex justify-center">
-      <div class="fixed z-50">
-        <button
+    <div class="hero bg-white/90 fixed z-50">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <button
           id="donation-btn"
           class="border-none border-gray-500 font-semibold btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] lg:text-lg text-black lg:px-8"
         >
@@ -78,19 +78,21 @@
         </button>
         <button
           id="history-btn"
-          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:px-8 ml-4 border-gray-500"
+          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:px-8 ml-8 border-gray-500"
         >
           History
         </button>
       </div>
     </div>
-    <!-- button switch section ends here -->
+  </div>
+  <!-- button switch section ends here -->
+  <hr class="border-black lg:mt-24 mt-14" />
 
-    <!-- cards section starts here -->
+  <!-- cards section starts here -->
     <section id="donation-page">
       <!-- card-01 -->
       <div
-        class="card lg:card-side bg-base-100 shadow-xl mt-10 w-10/12 flex mx-auto"
+        class="card lg:card-side bg-base-100 shadow-xl mt-4 w-10/12 flex mx-auto"
       >
         <figure class="w-full p-6">
           <img
@@ -126,7 +128,7 @@
             id="amount1"
             type="number"
             placeholder="Write Donation Amount"
-            class="input input-bordered w-full text-[#11111166] font-light"
+            class="input input-bordered w-full font-light"
           />
           <div class="card-actions justify-end mt-2">
             <button
@@ -138,6 +140,7 @@
           </div>
         </div>
       </div>
+
       <!-- card-02 -->
       <div
         class="card lg:card-side bg-base-100 shadow-xl mt-10 w-10/12 flex mx-auto"
@@ -178,7 +181,7 @@
             id="amount2"
             type="number"
             placeholder="Write Donation Amount"
-            class="input input-bordered w-full text-[#11111166] font-light"
+            class="input input-bordered w-full font-light"
           />
           <div class="card-actions justify-end mt-2">
             <button
@@ -231,7 +234,7 @@
             id="amount3"
             type="number"
             placeholder="Write Donation Amount"
-            class="input input-bordered w-full text-[#11111166] font-light"
+            class="input input-bordered w-full font-light"
           />
           <div class="card-actions justify-end mt-2">
             <button

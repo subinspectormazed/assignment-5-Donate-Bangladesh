@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ!</title>
-</head>
-<body>
-    
-</body>
+    <!-- googe font link added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUI and tailwind css cdn link added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <nav class="bg-[#F9F7F3]/80 pb-6 w-full sticky top-0 z-50 backdrop-blur-md">
+      <div class="navbar lg:w-10/12 flex mx-auto">
+        <div class="navbar-start">
+          <button
+            id="home-btn"
+            class="border-none font-semibold btn btn-ghost bg-[#B4F461] lg:text-lg text-black px-6"
+          >
+            Home
+          </button>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl text-black" href="./index.html"
+            ><img
+              class="w-10"
+              src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png"
+              alt=""
+            /><span class="hidden sm:block">Donate Bangladesh</span></a
+          >
+        </div>
+        <div class="navbar-end">
+          <img
+            src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+            alt=""
+          />
+          <p class="font-medium text-xl">
+            <span id="dashboard-amount" class="p-2">5500</span>BDT
+          </p>
+        </div>
+      </div>
+    </nav>
+    <!-- script js linked -->
+    <script src="./js/blog.js"></script>
+  </body>
 </html>
