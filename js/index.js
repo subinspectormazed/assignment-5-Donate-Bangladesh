@@ -10,7 +10,7 @@ document
       inputMoney <= 0 ||
       dashboardTotalMoney < inputMoney
     ) {
-      alert("invalid input");
+      alert("Invalid Donation amount");
       return;
     }
     const inputMoneyValue = getInputValueByID("amount1");
@@ -50,7 +50,7 @@ document
       inputMoney <= 0 ||
       dashboardTotalMoney < inputMoney
     ) {
-      alert("invalid input");
+      alert("Invalid Donation amount");
       return;
     }
     const addMoney =
@@ -89,7 +89,7 @@ document
       inputMoney <= 0 ||
       dashboardTotalMoney < inputMoney
     ) {
-      alert("invalid input");
+      alert("Invalid Donation amount");
       return;
     }
     const addMoney =
